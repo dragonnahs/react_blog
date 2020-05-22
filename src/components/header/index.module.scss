@@ -1,0 +1,28 @@
+.header{
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+  background: rgb(0, 11, 23);
+  color: #ffffff;
+  .left{
+    cursor: pointer;
+    font-size: 16px;
+    color: #eeeeee;
+    font-weight: bold;
+  }
+  .right{
+    white-space: nowrap;
+    display: flex;
+    div{
+      margin: 0 10px;
+      cursor: pointer;
+      &:hover{
+        color: rgb(23, 144, 255);
+      }
+    }
+  }
+}
