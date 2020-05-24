@@ -43,7 +43,7 @@ function App() {
             return <Route exact={comp.exact} key={comp.path} component={comp.component} path={comp.path}  />
           })
         }
-        {/* <Redirect to='/cms' from='/' /> */}
+        <Redirect to='/cms' from='/' />
         <Redirect to='/404' />
       </Switch>
     </HashRouter>
