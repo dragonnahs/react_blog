@@ -4,6 +4,7 @@ import { Route, Switch, HashRouter, Redirect } from 'react-router-dom'
 
 import { adminRoute, commonRoute } from "../routes/index";
 import Container from '../components/container'
+import './App.css'
 
 function App() {
   return (
