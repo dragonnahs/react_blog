@@ -1,3 +1,8 @@
 #root{
   height: 100%;
 }
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Helvetica,Arial,Microsoft YaHei,"微软雅黑",STHeitiSC-Light,simsun,"宋体",WenQuanYi Zen Hei,WenQuanYi Micro Hei,"sans-serif";
+}

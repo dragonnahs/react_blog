@@ -7,8 +7,6 @@ import PrivateRoute from './privateRoute'
 
 
 const Home = loadable(() => import('../pages/home'))
-const AddAd = loadable(() => import('../pages/ad/add'))
-const AddList = loadable(() => import('../pages/ad/list'))
 const Login = loadable(() => import('../pages/login'))
 const Register = loadable(() => import('../pages/register'))
 const Mine = loadable(() => import('../pages/mine'))
@@ -31,24 +29,24 @@ export const commonRoute = [
     path: '/register',
     exact: true,
     component: Register
-  }
-]
-
-export const adminRoute = [
+  },
   {
-    path: '/cms/home',
+    path: '/',
     exact: true,
     component: Home
   },
   {
-    path: '/cms/add_ad',
+    path: '/mine',
     exact: true,
-    component: AddAd
+    component: Mine
   },
-  {
-    path: '/cms/ad_list',
-    exact: true,
-    component: AddList
-  }
+]
+
+export const adminRoute = [
+  // {
+  //   path: '/cms/home',
+  //   exact: true,
+  //   component: Home
+  // }
 ]
 

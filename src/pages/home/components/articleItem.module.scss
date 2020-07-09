@@ -1,0 +1,45 @@
+.article-item{
+  margin: 0 auto 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.02);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  width: 100%;
+  .item-title{
+    color: #333333;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .item-content{
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #666666;
+  }
+  .item-img-box{
+    margin-top: 10px;
+    display: flex;
+    .item-img{
+      height: 100px;
+      background: url('http://demo.qzhai.net/gohan/wp-content/uploads/2020/01/aerial-photo-of-sea-1858161-500x625.jpg') no-repeat center center;
+      background-size: cover;
+      margin-right: 30px;
+      width: calc((100% - 60px)/3);
+      border-radius: 4px;
+      &:last-of-type{
+        margin: 0;
+      }
+    }
+  }
+  .article-info{
+    display: flex;
+    color: #888888;
+    margin-top: 10px;
+    font-size: 12px;
+    .article-author{
+      margin-right: 10px;
+    }
+    .article-time{
+      letter-spacing: 1px;
+    }
+  }
+}

@@ -3,8 +3,8 @@ import ReactDom from 'react-dom'
 import { Provider } from 'react-redux'
 import * as registerServiceWork from './serviceWorker'
 
-import App from './pages/App'
-import sotre from './store/index'
+import App from './pages/App.tsx'
+import sotre from './store/index.ts'
 
 
 

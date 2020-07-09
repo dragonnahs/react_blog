@@ -9,7 +9,7 @@ import style from './index.module.scss'
 
 import axios from '../../axios/index'
 
-class Login extends Component {
+class Login extends Component { 
   state = {
     name: '',
     password: ''
@@ -22,11 +22,6 @@ class Login extends Component {
     history.replace({
       pathname: (state && state.pathname) ? state.pathname : '/cms/home'
     })
-    // let res = await axios({
-    //   url: '/api/v1/user/login',
-    //   method: 'get'
-    // })
-    // console.log(res)
   };
   
   handleChangeName(e){

@@ -1,0 +1,7 @@
+declare module '*.module.scss'
+declare module '*.scss'
+declare module '*.jsx'
+declare module '*.tsx'
+declare module 'react-redux'
+declare module '*.js'
+declare module 'react-router-dom'
