@@ -11,10 +11,21 @@ const Login = loadable(() => import('../pages/login'))
 const Register = loadable(() => import('../pages/register'))
 const Mine = loadable(() => import('../pages/mine'))
 const Error404 = loadable(() => import('../pages/error'))
+const Article = loadable(() => import('../pages/article'))
 
 
 
 export const commonRoute = [
+  {
+    path: '/',
+    exact: true,
+    component: Home
+  },
+  {
+    path: '/mine',
+    exact: true,
+    component: Mine
+  },
   {
     path: '/404',
     exact: true,
@@ -31,22 +42,9 @@ export const commonRoute = [
     component: Register
   },
   {
-    path: '/',
+    path: '/article/:id',
     exact: true,
-    component: Home
+    component: Article
   },
-  {
-    path: '/mine',
-    exact: true,
-    component: Mine
-  },
-]
-
-export const adminRoute = [
-  // {
-  //   path: '/cms/home',
-  //   exact: true,
-  //   component: Home
-  // }
 ]
 

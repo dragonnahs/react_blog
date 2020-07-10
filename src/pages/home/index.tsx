@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import {Skeleton} from 'antd'
+import {Skeleton, Layout} from 'antd'
 import {connect} from 'react-redux'
 
 import style from './index.module.scss'
 import ArticleItem from './components/articleItem.tsx'
 import {setArticles} from '../../store/siderInfo/action'
+import Right from '../../components/right/index.tsx'
+
+const {Sider} = Layout
 
 type MState = {
   articles: object[],
@@ -72,20 +75,25 @@ class Home extends Component<MProps, MState> {
   }
   render() {
     return (
-      <div className={style.home}>
-        <div className={style.title}>最新文章</div>
-        <div className={style['home-box']}>
-        <Skeleton active paragraph={{ rows: 5 }} loading={this.state.loading}>
-          {
-            this.state.articles.map((item,index) => {
-              return (
-                <ArticleItem key={index} {...item} />
-              )
-            })
-          }
-        </Skeleton>
+      <Layout>
+        <div className={style.home}>
+          <div className={style.title}>最新文章</div>
+          <div className={style['home-box']}>
+          <Skeleton active paragraph={{ rows: 5 }} loading={this.state.loading}>
+            {
+              this.state.articles.map((item,index) => {
+                return (
+                  <ArticleItem key={index} {...item} />
+                )
+              })
+            }
+          </Skeleton>
+          </div>
         </div>
-      </div>
+        <Sider style={{backgroundColor: 'transparent'}}>
+          <Right/>
+        </Sider>
+      </Layout>
     );
   }
 }
